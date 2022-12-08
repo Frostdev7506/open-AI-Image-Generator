@@ -9,7 +9,7 @@
 }
 
 :root {
-  --primary-color: #f9b64d;
+  --primary-color: #f00f08;
 }
 
 body {
@@ -103,6 +103,14 @@ form button:hover {
 .image {
   width: 100%;
   margin-top: 2rem;
+}
+
+.image.yes{
+border-radius: auto;
+margin: auto;
+    border-color: var(--primary-color);
+    border-style: solid;
+
 }
 
 img {

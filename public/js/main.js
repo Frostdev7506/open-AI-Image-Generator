@@ -3,6 +3,7 @@ function onSubmit(e) {
 
   document.querySelector(".msg").textContent = "";
   document.querySelector("#image").src = "";
+  document.querySelector(".image").classList.remove("yes");
 
   const prompt = document.querySelector("#prompt").value;
   const size = document.querySelector("#size").value;
@@ -39,7 +40,7 @@ async function generateImageRequest(prompt, size) {
     // console.log(data);
 
     const imageUrl = data.data;
-
+    document.querySelector(".image").classList.add("yes");
     document.querySelector("#image").src = imageUrl;
 
     removeSpinner();
